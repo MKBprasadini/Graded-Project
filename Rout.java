@@ -4,6 +4,7 @@ class LocationManager {
 
     public LocationManager(Graph g, AVLTree t) { this.graph = g; this.tree = t; }
 
+    public void addLocation(String name) {
         if (name == null || name.trim().isEmpty()) {
             System.out.println(" Location name cannot be empty.");
             return;
